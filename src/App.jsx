@@ -29,17 +29,17 @@ export default function App() {
               <Route
                 path="/admin"
                 element={
-                  <ProtectedRoute>
+                  <ProtectRoute>
                     <Dashboard />
-                  </ProtectedRoute>
+                  </ProtectRoute>
                 }
               />
               <Route
                 path="/admin/applications/:id"
                 element={
-                  <ProtectedRoute>
+                  <ProtectRoute>
                     <ApplicationDetail />
-                  </ProtectedRoute>
+                  </ProtectRoute>
                 }
               />
             </Routes>
