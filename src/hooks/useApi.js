@@ -25,7 +25,7 @@ export default function useApi(url, params) {
     return () => {
       alive = false;
     };
-  }, [url, JSON.stringify(params || {})]);
+  }, [url, params]);
 
   return { data, loading, error, reload: () => get(url, params).then(setData) };
 }
